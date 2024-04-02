@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "tamed-express-server": "^3.0.2",
+    "tick-log": "^1.1.4"
+  }
+}
