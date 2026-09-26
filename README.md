@@ -64,7 +64,7 @@ node server.js
 Send POST requests to the server with a JSON body:
 
 ```bash
-curl -X POST http://localhost:3000/webLogger \
+curl -X POST http://localhost:3000/web-logger \
   -H "Content-Type: application/json" \
   -d '{
     "webLogFormat": "JSON",
@@ -115,14 +115,14 @@ Nested text format with key-value pairs
 
 **Basic logging:**
 ```bash
-curl -X POST http://localhost:3000/webLogger \
+curl -X POST http://localhost:3000/web-logger \
   -H "Content-Type: application/json" \
   -d '{"message": "User logged in", "userId": 42}'
 ```
 
 **With pretty formatting:**
 ```bash
-curl -X POST http://localhost:3000/webLogger \
+curl -X POST http://localhost:3000/web-logger \
   -H "Content-Type: application/json" \
   -d '{
     "webLogFormat": "PRETTY-JSON",
@@ -139,7 +139,7 @@ export WEB_LOGGER_PORT=9000
 node server.js
 
 # In another terminal:
-curl -X POST http://localhost:9000/webLogger \
+curl -X POST http://localhost:9000/web-logger \
   -H "Content-Type: application/json" \
   -d '{"event": "server_started"}'
 ```
@@ -157,7 +157,7 @@ web-logger/
 
 ## API Endpoint
 
-**POST** `/webLogger`
+**POST** `/web-logger`
 
 Logs the request body to the console with the specified format.
 
